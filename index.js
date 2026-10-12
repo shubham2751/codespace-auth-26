@@ -1,1 +1,8 @@
-console.log("Hello Shubham2751 here!");
+const app = require("./app");
+
+const {PORT} = process.env;
+
+
+app.listen(PORT, () => {
+    console.log(`SERVER is running at Port: ${PORT}`);
+});
